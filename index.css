@@ -1,0 +1,141 @@
+.navbar {
+  font-size: 2.5rem;
+  font-family: 'Lobster', cursive;
+  display: flex;
+  width: 100%;
+}
+.navbar__ul{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+}
+.navbar_list{
+    list-style-type: none;
+    
+}
+.navbar_list:hover{
+    color: rgb(194, 186, 186);
+    transition: 0.5s;
+    border: 5px solid rgb(194, 186, 186);
+}
+.head{
+    display: flex;
+    margin-top: 5%;
+}
+.ava{
+    width: 250px;
+    padding: 50px;
+    animation: 10s linear normal none infinite  ava;
+}
+.opisanie{
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    width: 400px;
+    animation: opisanie 1s linear infinite;
+}
+.opisanie:hover{
+ border: 5px dotted pink;
+transform: rotateZ(20deg);
+color: pink;
+
+}
+
+
+.anim {
+  animation: anim 70s linear infinite;
+  background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80"), #111111;
+  color: #eee;
+}
+
+@keyframes anim {
+   50%{
+    background-position:0px -3000px;
+  }
+}
+
+  @-webkit-keyframes ava {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(180deg);
+    }
+    50%{
+        transform: rotate(-180deg);
+    }
+    75%{
+        transform: rotate(0deg) ;
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+  }
+  .skills{
+    margin-top: 100px;
+    display: flex;
+    border: 3px solid wheat;
+    height: auto;
+  }
+.border_{
+border: 1px solid wheat;
+}
+.skills_list{
+    line-height: 50px;
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+
+}
+.skills_dev{
+    width: 50%;
+}
+
+.dev{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Lobster', cursive;
+
+}
+ .dev_dev{
+    width: 80%;
+    height: 80px;
+    background-color: rgb(74, 72, 69);
+    resize: horizontal;
+    overflow: auto;
+    padding: 12px;
+ }
+.dev_skill_html{
+    background: linear-gradient(to right,  red,orange,yellow,green,blue,indigo,violet, black);
+    height: 100%;
+    width: clamp(65%, 65%, 65%)
+}
+.dev_skill_js{
+    background: linear-gradient(to right,  red,orange,yellow,green,blue,indigo,violet, black);
+    height: 100%;
+    width: clamp(15%, 15%, 15%)
+}
+
+.dev_skill_css{
+    background: linear-gradient(to right,  red,orange,yellow,green,blue,indigo,violet, black);
+    height: 100%;
+    width: clamp(85%, 85%, 85%)
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+}
+.social_ul{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.social_list{
+    list-style: none;
+}
+.social_logo{
+    width: 50px;
+    height: 30px;
+    background-color: white;
+}
